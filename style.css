@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+@font-face{
+    font-family: "Groupe";
+    src:url("groupemedium-8mxgn.otf");
+}
+body{
+    overflow:hidden;
+    font-family: "Groupe";
+}
+#bg{
+    position: absolute;
+    width: 104%;
+    filter: blur(4px);
+    z-index: 0;
+    margin-left: -2%;
+    margin-top: -5%;
+}
+#barContainer{
+    position: relative;
+    top: 300px;
+}
+.bar{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    rotate: 45deg;    
+    left: 10px;
+    filter: blur(0.5px);
+    animation-name: bars;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    background-color: rgba(255, 255, 255, 0.253); 
+}
+#bar1{
+    animation-duration: 60s;
+    
+}
+#bar2{
+    animation-duration: 90s;
+}
+#bar3{
+    animation-duration: 120s;
+}
+@keyframes bars {
+    0% { left: -400px;}
+    20% { left: -300px; }
+    40% { left: -600px; background-color: rgba(255, 255, 255, 0.253); }
+    60% { left: -500px; background-color: rgba(255, 110, 52, 0.363); }
+    80% { left: -600px; background-color: rgba(255, 255, 255, 0.253); }
+    100% { left: -400px; }
+}
+
+#mainLogo{
+    position:absolute;
+    height: 200px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 2;
+    cursor: pointer;
+}
+@keyframes mainLogoAnimation {
+    0%{height: 600px;left:28%;bottom: 10px;filter: blur(20px);}
+    15%{height: 600px;left:28%;bottom: 10px;filter: blur(20px);}
+    50%{height: 600px;left:28%;bottom: 10px;filter: blur(0px);}     
+    60%{height: 200px;left:42%;bottom: -10px;}
+    75%{height: 200px;left:42%;bottom: 0px;}
+    80%{height: 200px;left:42%;bottom: 0px;}
+    90%{height: 200px;left:-10px;bottom: 0px;}
+    100%{height: 200px;left:0px;bottom: 0px;}
+}
+
+.center{
+    width: 99%;
+    text-align: center;
+}
+.title{
+    color: white;
+    font-size: 40px;
+}
+.triTitles{
+    display: flex;
+    position: absolute;
+}
+.triTitles,p{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+}
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0;
+    border-bottom: 200px solid white;
+    border-left: 120px solid transparent; 
+    border-right: 120px solid transparent;
+    opacity: 50%;
+    filter: blur(0.7px);
+    cursor: pointer;
+}
+
+#tri1{
+    left: 555px;
+    bottom: 250px;
+    transform: rotate(60deg);
+    z-index: 2;
+}
+#tri2{
+    left: 700px;
+    bottom: 250px;
+}
+#tri3{
+    left: 900px;
+    bottom: 250px;
+    transform: rotate(60deg);
+}
+#tri4{
+    left: 1045px;
+    bottom: 250px;
+}
+@keyframes tri1a{
+    0%{left: 800px;opacity: 0%;transform: rotate(0deg);}
+    50%{left: 800px;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
+    70%{left: 800px;opacity: 100%;transform: rotate(0deg);}
+    80%{left: 800px;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
+    90%{left: 555px;transform: rotate(0deg);}
+    93%{left: 553px;transform: rotate(0deg);}
+    95%{left: 555px;transform: rotate(0deg);}
+    100%{left: 555px;transform: rotate(60deg);}
+}
+@keyframes tri2a{
+    0%{left: 800px;opacity: 0%;transform: rotate(0deg);}
+    50%{left: 800px;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
+    70%{left: 800px;opacity: 100%;transform: rotate(0deg);}
+    80%{left: 800px;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
+    90%{left: 700px;transform: rotate(0deg);}
+    93%{left: 698px;transform: rotate(0deg);}
+    95%{left: 700px;transform: rotate(0deg);}
+    100%{left: 700px;transform: rotate(0deg);}
+}
+@keyframes tri3a{
+    0%{left: 800px;opacity: 0%;transform: rotate(0deg);}
+    50%{left: 800px;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
+    70%{left: 800px;opacity: 100%;transform: rotate(0deg);}
+    80%{left: 800px;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
+    90%{left: 900px;transform: rotate(0deg);}
+    93%{left: 902px;transform: rotate(0deg);}
+    95%{left: 900px;transform: rotate(0deg);}
+    100%{left: 900px;transform: rotate(60deg);}
+}
+@keyframes tri4a{
+    0%{left: 800px;opacity: 0%;transform: rotate(0deg);}
+    50%{left: 800px;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
+    70%{left: 800px;opacity: 100%;transform: rotate(0deg);}
+    80%{left: 800px;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
+    90%{left: 1045px;transform: rotate(0deg);}
+    93%{left: 1047p;transform: rotate(0deg);}
+    95%{left: 1045px;transform: rotate(0deg);}
+    100%{left: 1045px;transform: rotate(0deg);}
+}
+@keyframes title{
+    0%{opacity: 0%;}
+    85%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+@keyframes triHover {
+    from {
+      opacity: 0.5;
+      filter: blur(0.7px);
+      border-bottom: 200px solid white;
+      top: 200px;
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+      border-bottom: 200px solid orange;
+      top: 176px;
+    }
+}
+@keyframes triUnHover {
+
+    from {
+      opacity: 1;
+      filter: blur(0);
+      border-bottom: 200px solid orange;
+      top: 176px;
+    }
+    to {
+      opacity: 0.5;
+      filter: blur(0.7px);
+      border-bottom: 200px solid white;
+      top: 200px;
+    }
+}
