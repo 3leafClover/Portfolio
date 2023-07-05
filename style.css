@@ -58,7 +58,7 @@ body{
     height: 200px;
     left: 0px;
     bottom: 0px;
-    z-index: 2;
+    z-index: 3;
     cursor: pointer;
 }
 @keyframes mainLogoAnimation {
@@ -195,4 +195,50 @@ body{
       border-bottom: 200px solid white;
       top: 200px;
     }
+}
+
+
+
+.Ntriangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 0;
+    border-bottom: 80px solid rgba(255, 255, 255, 0.664);
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent;
+    opacity: 50%;
+    filter: blur(0.7px);
+    cursor: pointer;    
+    animation-fill-mode: forwards;
+    top: 30px;
+    left: 30px;
+}
+
+
+.Ntriangle:hover{
+    border-bottom: 80px solid orange;
+    opacity: 100%;
+}
+
+
+@keyframes nav1a{
+    0%{left: 30px;}
+    50%{left: 650px;}
+    100%{left: 450px;}
+}
+@keyframes nav2a{
+    0%{left: 30px;}
+    50%{left: 650px;}
+    100%{left: 600px;transform: rotate(58deg);top: 10px;}
+}
+@keyframes nav3a{
+    0%{left: 30px;}
+    50%{left: 650px;}
+    100%{left: 725px;}
+}
+@keyframes nav4a{
+    0%{left: 30px;}
+    50%{left: 672px;}
+    100%{left: 875px;transform: rotate(58deg);top: 10px;}
 }
