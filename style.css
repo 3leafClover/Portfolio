@@ -208,37 +208,52 @@ body{
     border-left: 50px solid transparent; 
     border-right: 50px solid transparent;
     opacity: 50%;
-    filter: blur(0.7px);
+    filter: blur(1.5px);
     cursor: pointer;    
     animation-fill-mode: forwards;
     top: 30px;
     left: 30px;
 }
-
-
 .Ntriangle:hover{
     border-bottom: 80px solid orange;
     opacity: 100%;
+    filter: blur(0px);
 }
-
+#nav1{
+    animation-name: nav1a;
+    animation-duration: 1s;
+    z-index: 1.5;
+}
+#nav2{
+    animation-name: nav2a;
+    animation-duration: 1s;
+}
+#nav3{
+    animation-name: nav3a;
+    animation-duration: 1s;
+}
+#nav4{
+    animation-name: nav4a;
+    animation-duration: 1s;
+}
 
 @keyframes nav1a{
     0%{left: 30px;}
-    50%{left: 650px;}
+    50%{left: 650px;transform: rotate(0deg);top:30px;}
     100%{left: 450px;}
 }
 @keyframes nav2a{
     0%{left: 30px;}
-    50%{left: 650px;}
+    50%{left: 650px;transform: rotate(0deg);top:30px;}
     100%{left: 600px;transform: rotate(58deg);top: 10px;}
 }
 @keyframes nav3a{
     0%{left: 30px;}
-    50%{left: 650px;}
+    50%{left: 650px;transform: rotate(0deg);top:30px;}
     100%{left: 725px;}
 }
 @keyframes nav4a{
     0%{left: 30px;}
-    50%{left: 672px;}
+    50%{left: 650px;transform: rotate(0deg);top:30px;}
     100%{left: 875px;transform: rotate(58deg);top: 10px;}
 }

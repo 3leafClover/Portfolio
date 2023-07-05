@@ -15,6 +15,7 @@ var nav2 = document.getElementById("nav2")
 var nav3 = document.getElementById("nav3")
 var nav4 = document.getElementById("nav4")
 
+
 function loaded() {
   logo.style.animation = "mainLogoAnimation 2s forwards 1";
   tri1.style.animation = "tri1a 5s forwards 1";
@@ -82,11 +83,11 @@ logo.addEventListener("click",()=>{
 })
 
 
-Ntriangles.forEach(function (element) {
-  element.addEventListener("click", () => {
-    nav1.style.animation = "nav1a 0.5s";
-    nav2.style.animation = "nav2a 0.5s";
-    nav3.style.animation = "nav3a 0.5s";
-    nav4.style.animation = "nav4a 0.5s";
-  });
+
+nav1.addEventListener("click",()=> {
+  console.log("hi")
+  nav1.style.animation = "nav1a 0.5s forwards 1";
+  nav2.style.animation = "nav2a 0.5s";
+  nav3.style.animation = "nav3a 0.5s";
+  nav4.style.animation = "nav4a 0.5s";
 });
