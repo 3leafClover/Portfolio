@@ -79,15 +79,8 @@ tri4.addEventListener("click", () => {
 
 
 logo.addEventListener("click",()=>{
-  location.reload()
-})
-
-
-
-nav1.addEventListener("click",()=> {
-  console.log("hi")
-  nav1.style.animation = "nav1a 0.5s forwards 1";
-  nav2.style.animation = "nav2a 0.5s";
-  nav3.style.animation = "nav3a 0.5s";
-  nav4.style.animation = "nav4a 0.5s";
+  playClickSound();
+  var delay = setTimeout(() => {
+      window.location.href = "index.html";
+  }, 200);
 });
