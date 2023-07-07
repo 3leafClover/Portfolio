@@ -17,7 +17,7 @@ var navMode="closed"
 
 
 Array.from(Ntriangles).forEach(function (element) {
-    element.addEventListener("click", function () {
+    element.addEventListener("mouseover", function () {
         nav1.style.animation = "nav1a 0.7s forwards 1";
         nav2.style.animation = "nav2a 0.7s forwards 1";
         nav3.style.animation = "nav3a 0.7s forwards 1";
@@ -60,10 +60,7 @@ nav1.addEventListener("click",()=>{
     console.log("hi")
 
     
-    //temporary fix
-    var delay = setTimeout(() => {
-        window.location.href = "contact.html";
-    }, 1000);
+
     
     navWord.style.animation = "title 1s forwards 1";
     nav2.addEventListener("click", () => {

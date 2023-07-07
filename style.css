@@ -241,6 +241,7 @@ body{
 #navContainer{
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 .navText{
     font-size: 20px;
@@ -295,4 +296,50 @@ body{
     100%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
     0%{left: 875px;transform: rotate(58deg);top: 10px;}
+}
+
+
+.border{
+    position: relative;
+    width: 100%;
+    height: 60px;    
+    transform: rotate(90deg);
+    filter: blur(0.5px);
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    background-color: rgba(255, 255, 255, 0.253); 
+    right: 60%;
+    animation-duration: 50s;
+    z-index: 0;
+}
+#bord1{
+    animation-name: bord1;
+}
+#bord2{
+    animation-name: bord2;
+}
+#bord3{
+    animation-name: bord3;
+}
+
+@keyframes bord1{
+    10%{right: 0%;}
+    30%{right: 2%;}
+    50%{right: -1%;}
+    70%{right: 1%;}
+    90%{right: -2%;}
+}
+@keyframes bord2{
+    5%{right: 20%;}
+    25%{right: 22%;}
+    45%{right: 19%;}
+    65%{right: 21%;}
+    85%{right: 18%;}
+}
+@keyframes bord3{
+    15%{right: -20%;}
+    35%{right: -21%;}
+    55%{right: -18%;}
+    75%{right: -22%;}
+    95%{right: -19%;}
 }
