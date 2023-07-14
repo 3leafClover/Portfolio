@@ -14,7 +14,7 @@ var navWord=document.getElementById("navWord");
 
 var navMode="closed"
 
-
+var titles=document.getElementsByClassName("title")
 
 Array.from(Ntriangles).forEach(function (element) {
     element.addEventListener("mouseover", function () {//temporary fix
@@ -113,3 +113,12 @@ function playClickSound() {
 //     });
 // } 
 
+
+
+
+
+function loaded(){
+    triangles.forEach(function (element) {
+        element.style.animation = "title 0.7s forwards 1";
+    });
+}

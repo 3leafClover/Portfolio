@@ -47,15 +47,15 @@ body{
 @keyframes bars {
     0% { left: -400px;}
     20% { left: -300px; }
-    40% { left: -600px; background-color: rgba(255, 255, 255, 0.253); }
-    60% { left: -500px; background-color: rgba(255, 110, 52, 0.363); }
-    80% { left: -600px; background-color: rgba(255, 255, 255, 0.253); }
+    40% { left: -600px;}
+    60% { left: -500px;}
+    80% { left: -600px;}
     100% { left: -400px; }
 }
 
 #mainLogo{
     position:absolute;
-    height: 200px;
+    height: 100px;
     left: 0px;
     bottom: 0px;
     z-index: 3;
@@ -63,12 +63,13 @@ body{
 }
 #navLogo{
     position:absolute;
-    height: 160px;
+    height: 100px;
     right: 0px;
-    top:-10px;
+    top:-30px;
     z-index: 3;
     cursor: pointer;
     opacity: 50%;
+    padding: 50px;
 }
 
 #navLogo:hover{
@@ -77,14 +78,14 @@ body{
 
 
 @keyframes mainLogoAnimation {
-    0%{height: 600px;left:28%;bottom: 10px;filter: blur(20px);}
-    15%{height: 600px;left:28%;bottom: 10px;filter: blur(20px);}
-    50%{height: 600px;left:28%;bottom: 10px;filter: blur(0px);}     
-    60%{height: 200px;left:42%;bottom: -10px;}
-    75%{height: 200px;left:42%;bottom: 0px;}
-    80%{height: 200px;left:42%;bottom: 0px;}
-    90%{height: 200px;left:-10px;bottom: 0px;}
-    100%{height: 200px;left:0px;bottom: 0px;}
+    0%{height: 350px;left:38%;bottom: 150px;filter: blur(20px);}
+    15%{height: 350px;left:38%;bottom: 150px;filter: blur(20px);}
+    50%{height: 350px;left:38%;bottom: 150px;filter: blur(0px);}     
+    60%{height: 120px;left:46%;bottom: 40px;}
+    75%{height: 120px;left:46%;bottom: 50px;}
+    80%{height: 120px;left:46%;bottom: 50px;}
+    90%{height: 120px;left:40px;bottom: 50px;}
+    100%{height: 120px;left:50px;bottom: 50px;}
 }
 
 .center{
@@ -94,6 +95,13 @@ body{
 .title{
     color: white;
     font-size: 40px;
+}
+.Ptitle{
+    position: absolute;
+    color: white;
+    bottom: -25px;
+    font-size: 50px;
+    opacity: 50%;
 }
 .triTitles{
     display: flex;
@@ -140,8 +148,8 @@ body{
     50%{right: 23%;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
     70%{right: 23%;opacity: 100%;transform: rotate(0deg);}
     80%{right: 23%;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
-    90%{right: 42%;transform: rotate(0deg);}
-    93%{right: 42.5%;transform: rotate(0deg);}
+    90%{right: 42.5%;transform: rotate(0deg);}
+    93%{right: 42%;transform: rotate(0deg);}
     95%{right: 42%;transform: rotate(0deg);}
     100%{right: 42%;transform: rotate(60deg);}
 }
@@ -150,8 +158,8 @@ body{
     50%{right: 23%;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
     70%{right: 23%;opacity: 100%;transform: rotate(0deg);}
     80%{right: 23%;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
-    90%{right: 31%;}
-    93%{right: 31.5%;}
+    90%{right: 31.5%;}
+    93%{right: 31%;}
     95%{right: 31%;}
     100%{right: 31%;}
 }
@@ -160,8 +168,8 @@ body{
     50%{right: 23%;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
     70%{right: 23%;opacity: 100%;transform: rotate(0deg);}
     80%{right: 23%;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
-    90%{right: 15.7%;transform: rotate(0deg);}
-    93%{right: 15.3%;transform: rotate(0deg);}
+    90%{right: 15.3%;transform: rotate(0deg);}
+    93%{right: 15.7%;transform: rotate(0deg);}
     95%{right: 15.7%;transform: rotate(0deg);}
     100%{right: 15.7%;transform: rotate(60deg);}
 }
@@ -170,8 +178,8 @@ body{
     50%{right: 23%;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
     70%{right: 23%;opacity: 100%;transform: rotate(0deg);}
     80%{right: 23%;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
-    90%{right: 4.7%;transform: rotate(0deg);}
-    93%{right: 4.3%;transform: rotate(0deg);}
+    90%{right: 4.3%;transform: rotate(0deg);}
+    93%{right: 4.7%;transform: rotate(0deg);}
     95%{right: 4.7%;transform: rotate(0deg);}
     100%{right: 4.7%;transform: rotate(0deg);}
 }
@@ -223,10 +231,10 @@ body{
     width: 0;
     height: 0;
     border-top: 0;
-    border-bottom: 80px solid rgba(255, 255, 255, 0.664);
+    border-bottom: 80px solid rgba(255, 255, 255, 0.452);
     border-left: 50px solid transparent; 
     border-right: 50px solid transparent;
-    opacity: 50%;
+    opacity: 15%;
     filter: blur(1px);
     cursor: pointer;    
     animation-fill-mode: forwards;
@@ -246,6 +254,7 @@ body{
 .navText{
     font-size: 20px;
     opacity: 0%;
+    
 }
 #navWord{
     font-size: 20px;
@@ -253,49 +262,50 @@ body{
 }
 #navTextCon{
     margin-top: 100px;
+    opacity: 50%;
 }   
 
 @keyframes nav1a{
     0%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
-    100%{left: 450px;border-bottom: 80px solid rgb(255, 0, 0);}
+    100%{left: 450px;border-bottom: 80px solid rgb(255, 0, 0);opacity: 100%;}
 }
 @keyframes nav2a{
     0%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
-    100%{left: 600px;transform: rotate(58deg);top: 10px;}
+    100%{left: 600px;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 @keyframes nav3a{
     0%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
-    100%{left: 725px;}
+    100%{left: 725px;opacity: 100%;}
 }
 @keyframes nav4a{
     0%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
-    100%{left: 875px;transform: rotate(58deg);top: 10px;}
+    100%{left: 875px;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 
 
 @keyframes nav1arev{
     100%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
-    0%{left: 450px;}
+    0%{left: 450px;opacity: 100%;border-bottom: 80px solid rgb(255, 0, 0);opacity: 100%;}
 }
 @keyframes nav2arev{
     100%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
-    0%{left: 600px;transform: rotate(58deg);top: 10px;}
+    0%{left: 600px;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 @keyframes nav3arev{
     100%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
-    0%{left: 725px;}
+    0%{left: 725px;opacity: 100%;}
 }
 @keyframes nav4arev{
     100%{left: 30px;}
     50%{left: 650px;transform: rotate(0deg);top:30px;}
-    0%{left: 875px;transform: rotate(58deg);top: 10px;}
+    0%{left: 875px;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 
 
@@ -308,7 +318,6 @@ body{
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     background-color: rgba(255, 255, 255, 0.253); 
-    right: 60%;
     animation-duration: 50s;
     z-index: 0;
 }
@@ -324,22 +333,35 @@ body{
 
 @keyframes bord1{
     10%{right: 0%;}
-    30%{right: 2%;}
+    30%{right: 1%;}
     50%{right: -1%;}
     70%{right: 1%;}
-    90%{right: -2%;}
+    90%{right: -1%;}
 }
 @keyframes bord2{
-    5%{right: 20%;}
-    25%{right: 22%;}
-    45%{right: 19%;}
-    65%{right: 21%;}
-    85%{right: 18%;}
+    0%{right: 17%;}
+    25%{right: 18%;}
+    45%{right: 17%;}
+    65%{right: 18%;}
+    95%{right: 17%;}
 }
 @keyframes bord3{
-    15%{right: -20%;}
-    35%{right: -21%;}
+    0%{right: -18%;}
+    35%{right: -17%;}
     55%{right: -18%;}
-    75%{right: -22%;}
-    95%{right: -19%;}
+    75%{right: -17%;}
+    95%{right: -18%;}
+}
+.infoContainer{
+    position: absolute;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    padding-top:10% ;
+}
+.infoContainer2{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
 }
