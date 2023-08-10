@@ -5,6 +5,8 @@ html {
 @font-face{
     font-family: "Groupe";
     src:url("groupemedium-8mxgn.otf");
+    font-family: "Robot";
+    src:url("Kanit-Medium.ttf") ;
 }
 body{
     overflow:hidden;
@@ -94,7 +96,7 @@ body{
 }
 .title{
     color: white;
-    font-size: 40px;
+    font-size: 35px;
 }
 .Ptitle{
     position: absolute;
@@ -288,23 +290,23 @@ body{
 
 
 @keyframes nav1arev{
-    100%{left: 30px;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;}
+    100%{left: 30px;opacity: 15%;}
+    50%{left: 650px;transform: rotate(0deg);top:30px;opacity: 100%;}
     0%{left: 450px;opacity: 100%;border-bottom: 80px solid rgb(255, 0, 0);opacity: 100%;}
 }
 @keyframes nav2arev{
-    100%{left: 30px;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;}
+    100%{left: 30px;opacity: 15%;}
+    50%{left: 650px;transform: rotate(0deg);top:30px;opacity: 100%;}
     0%{left: 600px;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 @keyframes nav3arev{
-    100%{left: 30px;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;}
+    100%{left: 30px;opacity: 15%;}
+    50%{left: 650px;transform: rotate(0deg);top:30px;opacity: 100%;}
     0%{left: 725px;opacity: 100%;}
 }
 @keyframes nav4arev{
-    100%{left: 30px;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;}
+    100%{left: 30px;opacity: 15%;}
+    50%{left: 650px;transform: rotate(0deg);top:30px;opacity: 100%;}
     0%{left: 875px;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 
@@ -336,21 +338,21 @@ body{
     30%{right: 1%;}
     50%{right: -1%;}
     70%{right: 1%;}
-    90%{right: -1%;}
+    100%{right: 0%;}
 }
 @keyframes bord2{
     0%{right: 17%;}
     25%{right: 18%;}
     45%{right: 17%;}
     65%{right: 18%;}
-    95%{right: 17%;}
+    100%{right: 17%;}
 }
 @keyframes bord3{
     0%{right: -18%;}
     35%{right: -17%;}
     55%{right: -18%;}
     75%{right: -17%;}
-    95%{right: -18%;}
+    100%{right: -18%;}
 }
 .infoContainer{
     position: absolute;
@@ -358,10 +360,37 @@ body{
     width: 100%;
     text-align: center;
     padding-top:10% ;
+    left: -40px;
 }
 .infoContainer2{
     position: relative;
     display: flex;
     flex-direction: column;
-    
+    width: 30%;
+}
+.infoContainer3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.information{
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: "Robot";
+}
+/* hehe */
+#contCont{
+    position: absolute;
+    margin-top: 15%;
+    left: 42%;
+    text-align: center;
+}
+#contCont a{
+    text-decoration: none;
+    color: white;
 }
