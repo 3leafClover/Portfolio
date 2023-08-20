@@ -113,3 +113,18 @@ function playClickSound() {
 //     });
 // } 
 
+const webLinks = document.getElementsByClassName("webLink");
+
+for (let i = 0; i < webLinks.length; i++) {
+    const anchor = webLinks[i].querySelector("a");
+    if (anchor) {
+        anchor.addEventListener("mouseover", () => {
+            anchor.style.animation = "webLinkHover 0.5s forwards 1";
+            playHoverSound();
+        });
+
+        anchor.addEventListener("mouseout", () => {
+            anchor.style.animation = "webLinkUnHover 0.5s forwards 1";
+        });
+    }
+}

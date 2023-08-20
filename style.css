@@ -12,13 +12,24 @@ body{
     overflow:hidden;
     font-family: "Groupe";
 }
-#bg{
-    position: absolute;
-    width: 104%;
+.information{
+    color: white;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 22px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: "Robot";
+}
+#bg {
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    width: 101%;
+    height: 102%;
+    z-index: -1;
     filter: blur(4px);
-    z-index: 0;
-    margin-left: -2%;
-    margin-top: -5%;
+    object-fit: cover; /* This ensures the image covers the entire container */
 }
 #barContainer{
     position: relative;
@@ -107,6 +118,7 @@ body{
 }
 .triTitles{
     display: flex;
+    width: 100%;
 }
 .triTitles,p{
     position: absolute;
@@ -334,7 +346,7 @@ body{
 }
 
 @keyframes bord1{
-    10%{right: 0%;}
+    5%{right: 0%;}
     30%{right: 1%;}
     50%{right: -1%;}
     70%{right: 1%;}
@@ -374,23 +386,221 @@ body{
     flex-direction: column;
     width: 45%;
 }
-.information{
-    color: white;
-    position: relative;
-    font-family: sans-serif;
-    font-size: 24px;
-    text-align: left;
-    margin-left: 20px;
-    font-family: "Robot";
-}
 /* hehe */
-#contCont{
+#contCont {
+    display: block;
     position: absolute;
-    margin-top: 15%;
-    left: 42%;
-    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border: white solid 2px;
+    padding: 20px;
+    border-radius: 10px;
 }
 #contCont a{
     text-decoration: none;
     color: white;
+}
+.webLink a{
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.178);
+    cursor: pointer;
+}
+@keyframes webLinkHover{
+    from{color: white;
+        background-color: rgba(255, 255, 255, 0.178);
+    }
+    to{color: black;
+    background-color:white;
+    }
+}
+@keyframes webLinkUnHover{
+    from{color: black;
+        background-color:white;
+    }
+    to{color: white;
+    background-color: rgba(255, 255, 255, 0.178);
+    }
+}
+
+#tritit1{
+    right: 48.5%;
+    top: 135px;
+}
+#tritit2{
+    right: 19%;
+    top: 135px;
+}
+#tritit3{
+    right: 31.5%;
+    top: 360px;
+}
+#tritit4{
+    right: 7%;
+    top: 360px;
+}
+@media only screen and (max-width: 768px) {
+    body{
+        align-items: center;
+    }
+
+    #bg{
+        height: 120%;
+        width: 110%;
+        left: -10px;
+        top: -10px;
+    }
+    .triangle{
+        border-bottom: 90px solid white;
+        border-left: 54px solid transparent; 
+        border-right: 54px solid transparent;
+    }
+
+
+    @keyframes tri1a{
+        0%{right: 32%;opacity: 0%;transform: rotate(0deg);}
+        50%{right: 32%;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
+        70%{right: 32%;opacity: 100%;transform: rotate(0deg);}
+        80%{right: 32%;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
+        90%{right: 61.5%;transform: rotate(0deg);}
+        93%{right: 61%;transform: rotate(0deg);}
+        95%{right: 61%;transform: rotate(0deg);}
+        100%{right: 61%;transform: rotate(60deg);}
+    }
+    @keyframes tri2a{
+        0%{right: 32%;opacity: 0%;transform: rotate(0deg);}
+        50%{right: 32%;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
+        70%{right: 32%;opacity: 100%;transform: rotate(0deg);}
+        80%{right: 32%;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
+        90%{right: 44.5%;}
+        93%{right: 44%;}
+        95%{right: 44%;}
+        100%{right: 44%;}
+    }
+    @keyframes tri3a{
+        0%{right: 32%;opacity: 0%;transform: rotate(0deg);}
+        50%{right: 32%;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
+        70%{right: 32%;opacity: 100%;transform: rotate(0deg);}
+        80%{right: 32%;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
+        90%{right: 19.3%;transform: rotate(0deg);}
+        93%{right: 19.7%;transform: rotate(0deg);}
+        95%{right: 19.7%;transform: rotate(0deg);}
+        100%{right: 19.7%;transform: rotate(60deg);}
+    }
+    @keyframes tri4a{
+        0%{right: 32%;opacity: 0%;transform: rotate(0deg);}
+        50%{right: 32%;opacity: 0%;transform: rotate(0deg);filter: blur(7px);}
+        70%{right: 32%;opacity: 100%;transform: rotate(0deg);}
+        80%{right: 32%;opacity: 80%;transform: rotate(0deg);filter: blur(0.7px);}
+        90%{right: 2%;transform: rotate(0deg);}
+        93%{right: 2.5%;transform: rotate(0deg);}
+        95%{right: 2.5%;transform: rotate(0deg);}
+        100%{right: 2.5%;transform: rotate(0deg);}
+    }
+    #tri1{
+        right: 61%;
+    }
+    #tri2{
+        right: 44%;
+    }
+    #tri3{
+        right: 19.7;
+    }
+    #tri4{
+        right: 2.5%;
+    }
+
+    #tritit1{
+        font-size: 20px;
+        top: 170px;
+        right: 72%;
+    }
+    #tritit2{
+        font-size: 20px;
+        top: 170px;
+        right: 25%;
+        
+    }
+    #tritit3{
+        font-size: 20px;
+        right: 44%;
+        top: 270px;
+    }
+    #tritit4{
+        font-size: 20px;
+        right: 5%;
+        top: 270px;
+    }
+
+    @keyframes triHover {
+        from {
+          opacity: 0.5;
+          filter: blur(0.7px);
+          border-bottom: 90px solid white;
+          top: 200px;
+        }
+        to {
+          opacity: 1;
+          filter: blur(0);
+          border-bottom: 90px solid orange;
+          top: 176px;
+        }
+    }
+    @keyframes triUnHover {
+
+        from {
+          opacity: 1;
+          filter: blur(0);
+          border-bottom: 90px solid orange;
+          top: 176px;
+        }
+        to {
+          opacity: 0.5;
+          filter: blur(0.7px);
+          border-bottom: 90px solid white;
+          top: 200px;
+        }
+    }
+    .Ptitle{
+        position: absolute;
+        font-size: 30px;    
+    }
+    #mainLogo {
+        position:absolute;
+        top: 75%;
+        margin-left: 37%;
+        height: 120px;
+    }
+    
+    @keyframes mainLogoAnimation {
+        0%{height: 200px;left: -8%;top:40%;filter: blur(10px);}
+        15%{height: 200px;left:-8%;top:40%;filter: blur(10px);}
+        50%{height: 200px;left:-8%;top:40%;filter: blur(0px);}     
+        60%{height: 120px;left:0%;top:77%;}
+        75%{height: 120px;left:0%;top:75%;}
+    }
+    .bar{
+        width: 105.7%;
+        left: -7px;
+        height: 50px;
+        transform: rotate(135deg);
+    }
+
+    @keyframes bars {
+        0% {top:60px;}
+        20% {top:20px;}
+        40% {top: 100px;}
+        60% {top: 20px;}
+        80% { top: 100px;}
+        100%{top: 60px;}
+    }    
+    .border{
+        rotate: 90deg;
+    }
+}
+.webLink a{
+    text-decoration: none;
 }
