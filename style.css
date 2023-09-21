@@ -280,46 +280,46 @@ body{
 }   
 
 @keyframes nav1a{
-    0%{left: 30px;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;}
-    100%{left: 450px;border-bottom: 80px solid rgb(255, 0, 0);opacity: 100%;}
+    0%{left: 2%;}
+    50%{left: 46%;transform: rotate(0deg);top:30px;}
+    100%{left: 31%;border-bottom: 80px solid rgb(255, 0, 0);opacity: 100%;}
 }
 @keyframes nav2a{
-    0%{left: 30px;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;}
-    100%{left: 600px;transform: rotate(58deg);top: 10px;opacity: 100%;}
+    0%{left: 2%;}
+    50%{left:  46%;transform: rotate(0deg);top:30px;}
+    100%{left: 42%;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 @keyframes nav3a{
-    0%{left: 30px;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;}
-    100%{left: 725px;opacity: 100%;}
+    0%{left: 2%;}
+    50%{left:  46%;transform: rotate(0deg);top:30px;}
+    100%{left: 51%;opacity: 100%;}
 }
 @keyframes nav4a{
-    0%{left: 30px;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;}
-    100%{left: 875px;transform: rotate(58deg);top: 10px;opacity: 100%;}
+    0%{left: 2%;}
+    50%{left:  46%;transform: rotate(0deg);top:30px;}
+    100%{left: 62%;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 
 
 @keyframes nav1arev{
-    100%{left: 30px;opacity: 15%;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;opacity: 100%;}
-    0%{left: 450px;opacity: 100%;border-bottom: 80px solid rgb(255, 0, 0);opacity: 100%;}
+    100%{left: 2%;opacity: 15%;}
+    50%{left:  46%;transform: rotate(0deg);top:30px;}
+    0%{left: 31%;border-bottom: 80px solid rgb(255, 0, 0);opacity: 100%;}
 }
 @keyframes nav2arev{
-    100%{left: 30px;opacity: 15%;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;opacity: 100%;}
-    0%{left: 600px;transform: rotate(58deg);top: 10px;opacity: 100%;}
+    100%{left: 2%;opacity: 15%;}
+    50%{left:  46%;transform: rotate(0deg);top:30px;}
+    0%{left: 42%;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 @keyframes nav3arev{
-    100%{left: 30px;opacity: 15%;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;opacity: 100%;}
-    0%{left: 725px;opacity: 100%;}
+    100%{left: 2%;opacity: 15%;}
+    50%{left:  46%;transform: rotate(0deg);top:30px;}
+    0%{left: 51%;opacity: 100%;}
 }
 @keyframes nav4arev{
-    100%{left: 30px;opacity: 15%;}
-    50%{left: 650px;transform: rotate(0deg);top:30px;opacity: 100%;}
-    0%{left: 875px;transform: rotate(58deg);top: 10px;opacity: 100%;}
+    100%{left: 2%;opacity: 15%;}
+    50%{left:  46%;transform: rotate(0deg);top:30px;}
+    0%{left: 62%;transform: rotate(58deg);top: 10px;opacity: 100%;}
 }
 
 
