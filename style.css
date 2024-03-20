@@ -12,6 +12,7 @@ body{
     overflow:hidden;
     font-family: "Groupe";
     background-color: black;
+    cursor: default;
 }
 .information{
     color: white;
